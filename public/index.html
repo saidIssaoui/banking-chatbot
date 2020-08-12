@@ -1,0 +1,317 @@
+<!--
+ * Copyright 2017 IBM Corp. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the 'License'); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+-->
+<html>
+
+<head>
+	<base href="/">
+	<title>watson Banking Chatbot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:image" content="conversation.svg" />
+	<meta property="og:title" content="Conversation Chat Simple" />
+	<meta property="og:description"
+		content="Sample application that shows how to use the Conversation API to identify user intents" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/test2.css">
+	<!-- carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    
+    <!-- animations CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- font-awsome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- mobile menu CSS -->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!--css animation-->
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <!--css animation-->
+    <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+	<style type="text/css">		
+		body {
+			padding-top: 3.5rem;
+		}
+	</style>
+</head>
+
+<body>
+
+	    <!--header area start-->
+    <div class="header-area wow fadeInDown header-absolate" id="nav" data-0="position:fixed;" data-top-top="position:fixed;top:0;" data-edge-strategy="set">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 d-block d-lg-none">
+                    <div class="mobile-menu"></div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="logo-area">
+					
+                      <a  class="scroll"><img src="img/watson.png" alt="">watson</a>
+					
+					
+                    </div>
+                </div>
+                <div class="col-4 col-lg-8 d-none d-lg-block">
+                    <div class="main-menu text-center">
+                        <nav>
+                            <ul id="slick-nav">
+                                <li><a class="scroll" href="#home">home</a>
+                              
+                                </li>
+                                <li><a class="scroll" href="#about">About</a>
+                                </li>
+                                <li><a class="scroll" href="#Paper">Investing</a></li>
+                                <li><a class="scroll" href="#Paper">Credit Cards</a></li>
+                                <li><a class="scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2 text-right">
+                    <a class="logibtn gradient-btn" onclick="document.getElementById('modal-wrapper').style.display='block'" >login</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--header area end-->
+		<!--Modal-->
+	<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" >
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Modal Popup Box</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      <input type="checkbox" style="margin:26px 30px;"> Remember me      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+<!--Modal end-->
+<!--welcome area start-->
+    <div class="top-main" >
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="welcome-right">
+                        <div class="welcome-text">
+                             <h1>  
+							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							 </h1>
+							 <h1>
+                            watson Bank
+                            Investors and Founders </h1>
+                            <h4>Open a Bank of watson Advantage Banking account
+and enjoy tools, benefits and rewards to help you
+manage your money — no matter what the future holds..</h4>
+                        </div>
+                        <div class="welcome-btn">
+                            <a href="#" class="gradient-btn v2 mr-20">Register for the WB</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="welcome-img">
+                        <img src="assets/img/welcome-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--welcome area end-->
+
+	<!--about area start-->
+    <div class="top-main" id="about">
+        <div class="space-30"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    
+                    <div class="space-30"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo-carousel owl-carousel text-center">
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            
+                        </div>
+                        <div class="single-logo-wrapper">
+                            <div class="single-item">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-90"></div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="about-mid-img">
+                        <img src="assets/img/about-left.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="heading">
+                        <h5>We are featured in</h5>
+                    </div>
+                    <div class="about-mid-text">
+                        <h1>A Platform for Exchange 
+                        Cyrptocurrency and shares</h1>
+                        <div class="space-10"></div>
+                        <p></p>
+                    </div>
+                    <div class="space-30"></div>
+                    <a href="#" class="gradient-btn v2 about-btn"> <i class="fa fa-send-o"></i> join us on telegraph</a>
+                </div>
+            </div>
+        </div>
+        <div class="space-90"></div>
+    </div>
+    <!--about area end-->
+	
+
+    
+	<!--footer area start-->
+    <div class="main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer">
+                        <div class="logo-area footer">
+                            <a href="#"><img src="img/watson.png" alt=""><h4>Watson</h4></a>
+                        </div>
+                        
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  
+
+<div class="chatbox-holder" >
+  <div class="chatbox" class="fa fa-minus">
+    <div class="chatbox-top">
+      <div class="chatbox-avatar">
+        <a target="_blank" class="fa fa-minus"><img src="img/call_center.png" /></a> 
+      </div>
+      <div class="chat-partner-name">
+        <span class="status online"></span>
+        <a target="_blank" class="fa fa-minus" >Welcome to our Banking chatbot.</a>
+      </div>
+      <div class="fa chatbox-icons">
+        <a ><i class="fa fa-minus"></i></a>     
+      </div>      
+    </div>
+	
+<div class="chat-messages">
+       <div class="message-box-holder">
+        <div class="message-box">
+          <div id="scrollingChat">
+					
+				</div>
+				<label for="textInput" class="inputOutline">
+					
+				</label>
+        </div>
+      </div>
+		
+			
+		   
+  </div>
+	<div class="chat-input-holder">
+      
+      <input id="textInput" type="text"  class="input responsive-column" placeholder="Type something" onkeydown="/*globals CanvasJS */
+				ConversationPanel.inputKeyDown(event, this)" />
+    </div>
+    
+	</div>
+	</div>
+	
+	<!-- Bootstrap core JavaScript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	
+	<script src="js/modal.js"></script>	
+	<script src="js/api.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/conversation.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/test2.js"></script>
+	<!-- jquery 2.2.4 js-->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <!-- popper js-->
+    <script src="assets/js/popper.js"></script>
+    <!-- carousel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- wow js-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>\
+    <!--skroller js-->
+    <script src="assets/js/skrollr.min.js"></script>
+    <!--mobile menu js-->
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <!--particle s-->
+    <script src="assets/js/particles.min.js"></script>
+    <!-- main js-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
