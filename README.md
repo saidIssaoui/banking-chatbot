@@ -101,7 +101,7 @@ The following instructions will depend on if you are provisioning Assistant from
 * Click `Create skill`
 * Select the `Dialog skill` option and then click `Next`.
 * Click the `Import skill` tab.
-* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` (or use the old full version in `full_banking.json`). `banking_IN.json` is used for content for banking in India and `banking_US.json` is used for content for banking in United States.
+* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` for content for banking in United States.
 * Select `Everything` and click `Import`.
 
 </p>
@@ -116,7 +116,7 @@ The following instructions will depend on if you are provisioning Assistant from
 * Click `Create skill`.
 * Select the `Dialog skill` option and then click `Next`.
 * Click the `Import skill` tab.
-* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` (or use the old full version in `full_banking.json`). `banking_IN.json` is used for content for banking in India and `banking_US.json` is used for content for banking in United States.
+* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the JSON file in `data/conversation/workspaces/banking_US.json` for content for banking in United States.
 * Select `Everything` and click `Import`.
 
 </p>
