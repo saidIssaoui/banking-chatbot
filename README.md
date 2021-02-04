@@ -50,7 +50,7 @@ When the reader has completed this pattern, they will understand how to:
 Clone the `watson-banking-chatbot` locally. In a terminal, run:
 
 ```bash
-git clone https://github.com/IBM/watson-banking-chatbot
+git clone https://github.com/saidIssaoui/banking-chatbot
 ```
 
 ### 2. Create Watson services
